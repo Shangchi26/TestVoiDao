@@ -5,7 +5,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 
+
 return new class extends Migration
+
 
 {
     /**
@@ -25,6 +27,7 @@ return new class extends Migration
 
             $table->timestamp('expires_at')->nullable();
 
+
             $table->timestamps();
         });
     }
@@ -38,6 +41,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('personal_access_tokens');
     }
-
-};
+}
 
